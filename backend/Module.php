@@ -1,18 +1,18 @@
 <?php
 
-namespace worstinme\zoo\backend;
+namespace balitrip\zoo\backend;
 
 use Yii;
-use worstinme\zoo\helpers\AppHelper;
+use balitrip\zoo\helpers\AppHelper;
 use yii\helpers\Inflector;
 
 class Module extends \yii\base\Module
 {
     public $accessRoles;
 
-    public $controllerNamespace = 'worstinme\zoo\backend\controllers';
+    public $controllerNamespace = 'balitrip\zoo\backend\controllers';
 
-    public $layout = '@worstinme/zoo/backend/views/layouts/backend';
+    public $layout = '@balitrip/zoo/backend/views/layouts/backend';
 
     public function init()
     {
@@ -24,14 +24,14 @@ class Module extends \yii\base\Module
 	    Yii::$app->i18n->translations['zoo'] = [
 	        'class' => 'yii\i18n\PhpMessageSource',
 	        'sourceLanguage' => 'ru-RU',
-	        'basePath' => '@worstinme/zoo/messages',
+	        'basePath' => '@balitrip/zoo/messages',
 	    ];
 
 	    foreach ($this->elements as $key=>$element) {
             Yii::$app->i18n->translations['zoo/'.$key] = [
                 'class' => 'yii\i18n\PhpMessageSource',
                 'sourceLanguage' => 'ru-RU',
-                'basePath' => '@worstinme/zoo/elements/'.$key.'/messages',
+                'basePath' => '@balitrip/zoo/elements/'.$key.'/messages',
                 'fileMap' => [
                     'zoo/'.$key => 'element.php',
                 ],
@@ -42,7 +42,7 @@ class Module extends \yii\base\Module
 
     public function getElements() {
 
-        $files = AppHelper::findDirectories(Yii::getAlias('@worstinme/zoo/elements'));
+        $files = AppHelper::findDirectories(Yii::getAlias('@balitrip/zoo/elements'));
 
         $files = array_unique(array_merge($files, AppHelper::findDirectories(Yii::getAlias(Yii::$app->zoo->elementsPath))));
 

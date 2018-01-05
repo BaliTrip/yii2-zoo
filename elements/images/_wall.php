@@ -5,7 +5,7 @@ use \yii\helpers\Html;
 $lightbox = isset($params['lightbox']) && $params['lightbox'] ? true : false;
 
 if ($lightbox ) {
-	\worstinme\uikit\assets\Lightbox::register($this);
+	\balitrip\uikit\assets\Lightbox::register($this);
 	$group = uniqid();
 }
 

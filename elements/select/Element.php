@@ -1,10 +1,10 @@
 <?php
 
-namespace worstinme\zoo\elements\select;
+namespace balitrip\zoo\elements\select;
 
 use Yii;
 
-class Element extends \worstinme\zoo\elements\BaseElementBehavior
+class Element extends \balitrip\zoo\elements\BaseElementBehavior
 {
     public $value_field = 'value_int';
 

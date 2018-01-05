@@ -1,12 +1,12 @@
 <?php
 
-namespace worstinme\zoo\assets;
+namespace balitrip\zoo\assets;
 
 use yii\web\AssetBundle;
 
 class AdminAsset extends AssetBundle
 {
-    public $sourcePath = '@worstinme/zoo/assets';
+    public $sourcePath = '@balitrip/zoo/assets';
 
     public $css = [
         'css'=>'css/admin.css',
@@ -19,8 +19,8 @@ class AdminAsset extends AssetBundle
     ];
 
     public $depends = [
-        'worstinme\uikit\UikitAsset',
-        'worstinme\uikit\assets\Notify',
+        'balitrip\uikit\UikitAsset',
+        'balitrip\uikit\assets\Notify',
     ];
 
     public $publishOptions = [

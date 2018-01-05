@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\helpers\Url;
-use worstinme\uikit\ActiveForm;
+use balitrip\uikit\ActiveForm;
 
 $this->title = Yii::$app->controller->app->title;
 $this->params['breadcrumbs'][] = ['label' => Yii::t('zoo','Приложения'), 'url' => ['/'.Yii::$app->controller->module->id.'/default/index']];
@@ -26,7 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
     'tableOptions'=> ['class' => 'uk-table uk-form uk-table-condensed uk-table-hover uk-table-bordered uk-margin-top'],
     'options'=> ['class' => 'items'],
     'layout' => '{items}{summary}{pager}',
-    'pager' => ['class'=> 'worstinme\zoo\helpers\LinkPager'],
+    'pager' => ['class'=> 'balitrip\zoo\helpers\LinkPager'],
     'columns' => [
         [
             'class' => 'yii\grid\CheckboxColumn',

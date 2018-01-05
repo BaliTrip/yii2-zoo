@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\zoo\elements;
+namespace balitrip\zoo\elements;
 
 use Yii;
 use ArrayObject;
@@ -13,7 +13,7 @@ use yii\validators\Validator;
  *
  * See [[\yii\db\ActiveRecord]] for a concrete implementation.
  *
- * @property Items|\worstinme\zoo\models\Items $owner
+ * @property Items|\balitrip\zoo\models\Items $owner
  */
 
 class BaseElementBehavior extends \yii\base\Behavior

@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\zoo\elements\textfield_multiple;
+namespace balitrip\zoo\elements\textfield_multiple;
 
 use Yii;
 use yii\db\ActiveRecord;

@@ -1,12 +1,12 @@
 <?php
 
-namespace worstinme\zoo\elements\color;
+namespace balitrip\zoo\elements\color;
 
 use Yii;
 use yii\db\ActiveRecord;
 use yii\db\BaseActiveRecord;
 
-class Config extends \worstinme\zoo\elements\textfield_multiple\Config
+class Config extends \balitrip\zoo\elements\textfield_multiple\Config
 {
 
 

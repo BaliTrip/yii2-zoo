@@ -4,7 +4,7 @@ namespace app\models;
 
 use Yii;
 
-class <?=$modelName?> extends \worstinme\zoo\models\Items
+class <?=$modelName?> extends \balitrip\zoo\models\Items
 {
 
 }

@@ -2,20 +2,20 @@
 
 /* @var $this yii\web\View */
 
-use worstinme\zoo\helpers\ImageHelper;
+use balitrip\zoo\helpers\ImageHelper;
 use yii\helpers\Html;
 use yii\helpers\Url;
 
-worstinme\uikit\assets\Upload::register($this);
-worstinme\uikit\assets\Notify::register($this);
-worstinme\uikit\assets\Lightbox::register($this);
-worstinme\uikit\assets\Sortable::register($this);
+balitrip\uikit\assets\Upload::register($this);
+balitrip\uikit\assets\Notify::register($this);
+balitrip\uikit\assets\Lightbox::register($this);
+balitrip\uikit\assets\Sortable::register($this);
 
 $input_id = Html::getInputId($model, $attribute);
 
 $images = array_merge(is_array($model->{$attribute}) ? $model->{$attribute} : [], $model->getTempImages($attribute));
 
-\worstinme\zoo\elements\image_uikit\Asset::register($this);
+\balitrip\zoo\elements\image_uikit\Asset::register($this);
 
 ?>
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\zoo\elements\parsed_category;
+namespace balitrip\zoo\elements\parsed_category;
 
 use Yii;
 use yii\db\ActiveRecord;

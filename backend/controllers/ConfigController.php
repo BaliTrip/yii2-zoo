@@ -1,9 +1,9 @@
 <?php
 
-namespace worstinme\zoo\backend\controllers;
+namespace balitrip\zoo\backend\controllers;
 
 use Yii;
-use worstinme\zoo\backend\models\Config;
+use balitrip\zoo\backend\models\Config;
 use yii\data\ActiveDataProvider;
 use yii\web\NotFoundHttpException;
 

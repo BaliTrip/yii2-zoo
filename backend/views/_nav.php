@@ -1,7 +1,7 @@
 <?php
 
-use worstinme\uikit\Nav;
-use worstinme\uikit\NavBar;
+use balitrip\uikit\Nav;
+use balitrip\uikit\NavBar;
 use yii\helpers\Html;
 
 $app = Yii::$app->controller->app;

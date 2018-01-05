@@ -1,16 +1,16 @@
 <?php
 
-namespace worstinme\zoo\models;
+namespace balitrip\zoo\models;
 
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
 use yii\helpers\ArrayHelper;
-use worstinme\zoo\models\Items;
-use worstinme\zoo\models\Categories;
+use balitrip\zoo\models\Items;
+use balitrip\zoo\models\Categories;
 
 /**
- * ItemsSearch represents the model behind the search form about `worstinme\zoo\frontend\models\Items`.
+ * ItemsSearch represents the model behind the search form about `balitrip\zoo\frontend\models\Items`.
  */
 class S extends Items
 {

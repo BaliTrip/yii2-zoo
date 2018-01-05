@@ -4,13 +4,13 @@
 /* @var $content string */
 
 use yii\helpers\Html;
-use worstinme\uikit\Nav;
-use worstinme\uikit\NavBar;
-use worstinme\uikit\Alert;
-use worstinme\uikit\Breadcrumbs;
+use balitrip\uikit\Nav;
+use balitrip\uikit\NavBar;
+use balitrip\uikit\Alert;
+use balitrip\uikit\Breadcrumbs;
 use yii\helpers\ArrayHelper;
 
-\worstinme\zoo\assets\AdminAsset::register($this);
+\balitrip\zoo\assets\AdminAsset::register($this);
 
 ?>
 <?php $this->beginPage() ?>
@@ -34,7 +34,7 @@ use yii\helpers\ArrayHelper;
         'items' => [
             ['label' => '<i class="uk-icon-bars"></i> Приложения', 'url' => ['/zooadmin/default/index'],
                 'items'=> ArrayHelper::toArray(Yii::$app->zoo->applications,[
-                    'worstinme\zoo\models\Applications' => [
+                    'balitrip\zoo\models\Applications' => [
                         'label'=>'title',
                         'url'=>function ($app) {
                             return ['/zooadmin/items/index','app'=>$app->id];

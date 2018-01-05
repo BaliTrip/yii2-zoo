@@ -1,12 +1,12 @@
 <?php
 
-namespace worstinme\zoo\backend\models;
+namespace balitrip\zoo\backend\models;
 
-use worstinme\zoo\models\Items;
+use balitrip\zoo\models\Items;
 use Yii;
 use yii\helpers\Json;
 
-class Categories extends \worstinme\zoo\models\Categories
+class Categories extends \balitrip\zoo\models\Categories
 {
     public function getRelated()
     {

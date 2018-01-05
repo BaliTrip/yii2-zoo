@@ -1,13 +1,13 @@
 <?php
 
-namespace worstinme\zoo\elements\image_uikit;
+namespace balitrip\zoo\elements\image_uikit;
 
 use Yii;
 use yii\db\ActiveRecord;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Json;
 
-class Element extends \worstinme\zoo\elements\BaseElementBehavior
+class Element extends \balitrip\zoo\elements\BaseElementBehavior
 {
 
     public function rules($attributes)

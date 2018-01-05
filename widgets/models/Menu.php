@@ -1,9 +1,9 @@
 <?php
 
-namespace worstinme\zoo\widgets\models;
+namespace balitrip\zoo\widgets\models;
 
 use Yii;
-use worstinme\zoo\backend\models\Menu as M;
+use balitrip\zoo\backend\models\Menu as M;
 
 class Menu extends \yii\base\Model
 {
@@ -20,7 +20,7 @@ class Menu extends \yii\base\Model
     }
 
     public static function getFormView() {
-        return '@worstinme/zoo/widgets/forms/menu';
+        return '@balitrip/zoo/widgets/forms/menu';
     }
 
     public function rules()

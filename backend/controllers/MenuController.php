@@ -1,12 +1,12 @@
 <?php
 
-namespace worstinme\zoo\backend\controllers;
+namespace balitrip\zoo\backend\controllers;
 
 use Yii;
 
-use worstinme\zoo\backend\models\Applications;
-use worstinme\zoo\backend\models\Menu;
-use worstinme\zoo\backend\models\MenuSearch;
+use balitrip\zoo\backend\models\Applications;
+use balitrip\zoo\backend\models\Menu;
+use balitrip\zoo\backend\models\MenuSearch;
 
 use yii\web\NotFoundHttpException;
 

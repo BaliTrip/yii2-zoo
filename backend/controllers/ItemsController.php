@@ -1,11 +1,11 @@
 <?php
 
-namespace worstinme\zoo\backend\controllers;
+namespace balitrip\zoo\backend\controllers;
 
 use Yii;
-use worstinme\zoo\models\Items;
-use worstinme\zoo\backend\models\ItemsSearch;
-use worstinme\zoo\helpers\Inflector;
+use balitrip\zoo\models\Items;
+use balitrip\zoo\backend\models\ItemsSearch;
+use balitrip\zoo\helpers\Inflector;
 use yii\web\NotFoundHttpException;
 
 /**
@@ -184,7 +184,7 @@ class ItemsController extends Controller
                 $renders = [];
 
                 foreach ($renderElements as $element) {
-                    $path = '@worstinme/zoo/elements/'.$model->elements[$element]['type'].'/form.php';
+                    $path = '@balitrip/zoo/elements/'.$model->elements[$element]['type'].'/form.php';
                     $renders[$element] = $this->renderAjax($path,[
                                 'model'=>$model,
                                 'element'=>$model->elements[$element],

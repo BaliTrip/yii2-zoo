@@ -1,10 +1,10 @@
 <?php
 
-namespace worstinme\zoo\backend\controllers;
+namespace balitrip\zoo\backend\controllers;
 
 use Yii;
-use worstinme\zoo\backend\models\Widgets;
-use worstinme\zoo\backend\models\WidgetsSearch;
+use balitrip\zoo\backend\models\Widgets;
+use balitrip\zoo\backend\models\WidgetsSearch;
 use yii\web\NotFoundHttpException;
 
 class WidgetsController extends Controller
@@ -135,8 +135,8 @@ class WidgetsController extends Controller
 
     protected function checkWidget($widget) {
 
-        if (!empty($widget) && file_exists(Yii::getAlias('@worstinme/zoo/widgets/models/'.$widget.'.php'))) {
-            return 'worstinme\zoo\widgets\models\\'.$widget;
+        if (!empty($widget) && file_exists(Yii::getAlias('@balitrip/zoo/widgets/models/'.$widget.'.php'))) {
+            return 'balitrip\zoo\widgets\models\\'.$widget;
         } else {
             return null;
         }
@@ -146,13 +146,13 @@ class WidgetsController extends Controller
 
         $widgets = [];
 
-        $path = Yii::getAlias('@worstinme/zoo/widgets/models/');
+        $path = Yii::getAlias('@balitrip/zoo/widgets/models/');
 
         $widgetModels = \yii\helpers\FileHelper::findFiles($path);
 
         foreach ($widgetModels as $key => $model) {
             $model = str_replace($path, '', rtrim($model,".php"));
-            $widgets[$model] = "worstinme\zoo\widgets\models\\".$model;
+            $widgets[$model] = "balitrip\zoo\widgets\models\\".$model;
         }
 
         return $widgets;

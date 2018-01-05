@@ -1,12 +1,12 @@
 <?php
 
-namespace worstinme\zoo\widgets;
+namespace balitrip\zoo\widgets;
 
 use Yii;
-use worstinme\zoo\models\Items;
-use worstinme\zoo\models\ItemsElements;
+use balitrip\zoo\models\Items;
+use balitrip\zoo\models\ItemsElements;
 
-class LastItems extends \worstinme\widgets\widgets\Widget
+class LastItems extends \balitrip\widgets\widgets\Widget
 {
     public $sort;
     public $title;

@@ -36,15 +36,15 @@ class m171031_044729_schedule_fix extends Migration
             $newScheduleId = $this->db->lastInsertID;
 
             $oldElements = (new \yii\db\Query())->select('ie.*')
-                ->from(['ie'=>\worstinme\zoo\models\ItemsElements::tableName()])
-                ->leftJoin(['e'=>\worstinme\zoo\models\Elements::tableName()],'e.name = ie.element')
+                ->from(['ie'=>\balitrip\zoo\models\ItemsElements::tableName()])
+                ->leftJoin(['e'=>\balitrip\zoo\models\Elements::tableName()],'e.name = ie.element')
                 ->where(['e.type'=>'schedule'])
                 ->andWhere(['ie.value_int'=>$schedule['id']])
                 ->groupBy('ie.id')
                 ->all();
 
             foreach ($oldElements as $element) {
-                $this->db->createCommand()->insert(\worstinme\zoo\models\ItemsElements::tableName(),[
+                $this->db->createCommand()->insert(\balitrip\zoo\models\ItemsElements::tableName(),[
                     'item_id'=>$element['item_id'],
                     'element'=>$element['element'],
                     'value_int'=>$newScheduleId,

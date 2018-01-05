@@ -1,6 +1,6 @@
 <?php
 
-use worstinme\uikit\ActiveForm;
+use balitrip\uikit\ActiveForm;
 use yii\helpers\Url;
 use yii\helpers\Html;
 

@@ -1,11 +1,11 @@
 <?php
 
-namespace worstinme\zoo\backend\models;
+namespace balitrip\zoo\backend\models;
 
 use Yii;
-use worstinme\zoo\models\Items;
-use worstinme\zoo\models\Applications;
-use worstinme\zoo\models\Categories;
+use balitrip\zoo\models\Items;
+use balitrip\zoo\models\Applications;
+use balitrip\zoo\models\Categories;
 
 class Menu extends \yii\db\ActiveRecord
 {

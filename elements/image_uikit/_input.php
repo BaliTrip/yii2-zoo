@@ -1,6 +1,6 @@
 <?php
 
-use worstinme\zoo\helpers\ImageHelper;
+use balitrip\zoo\helpers\ImageHelper;
 
 $key = $key??count($model->{$attribute}) + count($model->getTempImages($attribute)) + 1;
 

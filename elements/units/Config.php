@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\zoo\elements\units;
+namespace balitrip\zoo\elements\units;
 
 use Yii;
 use yii\db\ActiveRecord;

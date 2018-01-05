@@ -1,10 +1,10 @@
 <?php
 
 use \yii\helpers\Html;
-use worstinme\zoo\helpers\ImageHelper;
+use balitrip\zoo\helpers\ImageHelper;
 
-\worstinme\uikit\assets\Slideshow::register($this);
-\worstinme\uikit\assets\Slider::register($this);
+\balitrip\uikit\assets\Slideshow::register($this);
+\balitrip\uikit\assets\Slider::register($this);
 
 $width = isset($params['width']) ? (int)$params['width'] : null;
 $height = isset($params['height']) ? (int)$params['height'] : null;

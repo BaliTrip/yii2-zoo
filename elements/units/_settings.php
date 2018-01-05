@@ -1,6 +1,6 @@
 <?php
 
-$fields = \worstinme\zoo\models\Elements::find()->where(['app_id'=>Yii::$app->controller->application->id,'type'=>'textfield'])->all();
+$fields = \balitrip\zoo\models\Elements::find()->where(['app_id'=>Yii::$app->controller->application->id,'type'=>'textfield'])->all();
 
 $fields = \yii\helpers\ArrayHelper::map($fields,'id','title');
 

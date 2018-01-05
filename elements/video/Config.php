@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\zoo\elements\video;
+namespace balitrip\zoo\elements\video;
 
 use Yii;
 use yii\db\ActiveRecord;
@@ -14,6 +14,6 @@ class Config extends \yii\base\Behavior
     public $_multiple = false;
 
     public function getParamsView() {
-        return '@worstinme/zoo/elements/video/params';
+        return '@balitrip/zoo/elements/video/params';
     }
 }

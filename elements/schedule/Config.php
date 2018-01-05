@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\zoo\elements\schedule;
+namespace balitrip\zoo\elements\schedule;
 
 use Yii;
 use yii\db\ActiveRecord;

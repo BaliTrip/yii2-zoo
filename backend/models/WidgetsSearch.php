@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\zoo\backend\models;
+namespace balitrip\zoo\backend\models;
 
 use Yii;
 use yii\base\Model;

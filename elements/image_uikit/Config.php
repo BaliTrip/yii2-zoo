@@ -1,8 +1,8 @@
 <?php
 
-namespace worstinme\zoo\elements\image_uikit;
+namespace balitrip\zoo\elements\image_uikit;
 
-use worstinme\zoo\elements\BaseConfigBehavior;
+use balitrip\zoo\elements\BaseConfigBehavior;
 use Yii;
 
 class Config extends BaseConfigBehavior
@@ -38,7 +38,7 @@ class Config extends BaseConfigBehavior
     }
 
     public function getConfigView() {
-        return '@worstinme/zoo/elements/image_uikit/_settings';
+        return '@balitrip/zoo/elements/image_uikit/_settings';
     }
 
     public function getDir()

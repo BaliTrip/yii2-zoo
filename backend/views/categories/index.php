@@ -2,7 +2,7 @@
 
 use yii\helpers\Html;
 use yii\helpers\Url;
-use worstinme\uikit\ActiveForm;
+use balitrip\uikit\ActiveForm;
 
 $this->title = Yii::t('zoo', 'Категории');
 $this->params['breadcrumbs'][] = ['label' => Yii::t('zoo', 'Приложения'), 'url' => ['/'.Yii::$app->controller->module->id.'/default/index']];
@@ -25,8 +25,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <?php
 
-\worstinme\uikit\assets\Nestable::register($this);
-\worstinme\uikit\assets\Notify::register($this);
+\balitrip\uikit\assets\Nestable::register($this);
+\balitrip\uikit\assets\Notify::register($this);
 
 $category_sort_url = Url::toRoute(['sort']);
 $alias_create_url = Url::toRoute(['alias-create']);

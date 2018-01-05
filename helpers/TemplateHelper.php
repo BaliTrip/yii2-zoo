@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\zoo\helpers;
+namespace balitrip\zoo\helpers;
 
 use Yii;
 use yii\base\InvalidParamException;
@@ -165,7 +165,7 @@ class TemplateHelper
                 $element_view_path = '@app/views/'.$model->app->name.'/elements/'.$attribute.'_form.php';
 
                 if (!is_file(Yii::getAlias($element_view_path))) {
-                    $element_view_path = '@worstinme/zoo/elements/'.$element->type.'/form.php';
+                    $element_view_path = '@balitrip/zoo/elements/'.$element->type.'/form.php';
                 }
 
                 $refresh = $element->refresh ? 'refresh' : '';
@@ -192,7 +192,7 @@ class TemplateHelper
                     $element_view_path = '@app/views/'.$model->app->name.'/elements/'.$attribute.'_form.php';
 
                     if (!is_file(Yii::getAlias($element_view_path))) {
-                        $element_view_path = '@worstinme/zoo/elements/'.$element->type.'/form.php';
+                        $element_view_path = '@balitrip/zoo/elements/'.$element->type.'/form.php';
                     }
                 }
 
@@ -216,7 +216,7 @@ class TemplateHelper
                 $element_view_path = '@app/views/'.$model->app->name.'/elements/'.$attribute.'.php';
 
                 if (!is_file(Yii::getAlias($element_view_path))) {
-                    $element_view_path = '@worstinme/zoo/elements/'.$element->type.'/view.php';
+                    $element_view_path = '@balitrip/zoo/elements/'.$element->type.'/view.php';
                 }
 
                 $t = Yii::$app->view->render($element_view_path,[

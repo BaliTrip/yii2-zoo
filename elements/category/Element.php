@@ -1,13 +1,13 @@
 <?php
 
-namespace worstinme\zoo\elements\category;
+namespace balitrip\zoo\elements\category;
 
 use Yii;
 use yii\db\ActiveRecord;
 use yii\validators\RequiredValidator;
 use yii\validators\Validator;
 
-class Element extends \worstinme\zoo\elements\BaseElementBehavior
+class Element extends \balitrip\zoo\elements\BaseElementBehavior
 {
 
 	public function rules($attributes)

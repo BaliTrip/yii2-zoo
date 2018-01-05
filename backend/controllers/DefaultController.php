@@ -1,15 +1,15 @@
 <?php
 /**
- * @link https://github.com/worstinme/yii2-user
+ * @link https://github.com/balitrip/yii2-user
  * @copyright Copyright (c) 2014 Evgeny Zakirov
  * @license http://opensource.org/licenses/MIT MIT
  */
-namespace worstinme\zoo\backend\controllers;
+namespace balitrip\zoo\backend\controllers;
 
-use worstinme\zoo\helpers\Inflector;
+use balitrip\zoo\helpers\Inflector;
 use Yii;
-use worstinme\zoo\backend\models\Applications;
-use worstinme\zoo\models\Items;
+use balitrip\zoo\backend\models\Applications;
+use balitrip\zoo\models\Items;
 
 use yii\web\NotFoundHttpException;
 

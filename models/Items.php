@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\zoo\models;
+namespace balitrip\zoo\models;
 
 use Yii;
 use yii\helpers\Html;
@@ -126,8 +126,8 @@ class Items extends \yii\db\ActiveRecord
     {
 
         foreach ($this->elementsTypes as $behavior) {
-            if (is_file(Yii::getAlias('@worstinme/zoo/elements/' . $behavior . '/Element.php'))) {
-                $behavior_class = '\worstinme\zoo\elements\\' . $behavior . '\Element';
+            if (is_file(Yii::getAlias('@balitrip/zoo/elements/' . $behavior . '/Element.php'))) {
+                $behavior_class = '\balitrip\zoo\elements\\' . $behavior . '\Element';
                 $this->attachBehavior($behavior, $behavior_class::className());
             }
         }
@@ -401,7 +401,7 @@ class Items extends \yii\db\ActiveRecord
             return $template['rendererViewPath'];
         }
 
-        return '@worstinme/zoo/renderers/uikit_grid/view';
+        return '@balitrip/zoo/renderers/uikit_grid/view';
     }
 
     public function beforeSave($insert)

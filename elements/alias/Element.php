@@ -1,12 +1,12 @@
 <?php
 
-namespace worstinme\zoo\elements\alias;
+namespace balitrip\zoo\elements\alias;
 
 use Yii;
 use yii\db\ActiveRecord;
 use yii\helpers\Inflector;
 
-class Element extends \worstinme\zoo\elements\BaseElementBehavior
+class Element extends \balitrip\zoo\elements\BaseElementBehavior
 {
 	public function rules($attributes)
 	{

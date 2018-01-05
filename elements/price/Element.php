@@ -1,10 +1,10 @@
 <?php
 
-namespace worstinme\zoo\elements\price;
+namespace balitrip\zoo\elements\price;
 
 use Yii;
 
-class Element extends \worstinme\zoo\elements\BaseElementBehavior
+class Element extends \balitrip\zoo\elements\BaseElementBehavior
 {
 
 	public function rules($attributes)

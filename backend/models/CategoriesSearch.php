@@ -1,14 +1,14 @@
 <?php
 
-namespace worstinme\zoo\models;
+namespace balitrip\zoo\models;
 
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use worstinme\zoo\models\Categories;
+use balitrip\zoo\models\Categories;
 
 /**
- * CategoriesSearch represents the model behind the search form about `worstinme\zoo\models\Categories`.
+ * CategoriesSearch represents the model behind the search form about `balitrip\zoo\models\Categories`.
  */
 class CategoriesSearch extends Categories
 {

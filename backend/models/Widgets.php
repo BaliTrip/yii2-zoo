@@ -1,11 +1,11 @@
 <?php
 
-namespace worstinme\zoo\backend\models;
+namespace balitrip\zoo\backend\models;
 
 use Yii;
 
 
-class Widgets extends \worstinme\zoo\models\Widgets
+class Widgets extends \balitrip\zoo\models\Widgets
 {
     public $widgetModel;
     

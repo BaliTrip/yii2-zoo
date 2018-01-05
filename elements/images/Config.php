@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\zoo\elements\images;
+namespace balitrip\zoo\elements\images;
 
 use Yii;
 use yii\db\ActiveRecord;
@@ -20,7 +20,7 @@ class Config extends \yii\base\Behavior
     }
 
     public function getParamsView() {
-        return '@worstinme/zoo/elements/images/params';
+        return '@balitrip/zoo/elements/images/params';
     }
 
 

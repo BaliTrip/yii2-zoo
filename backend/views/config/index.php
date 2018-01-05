@@ -22,7 +22,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'tableOptions'=> ['class' => 'uk-table uk-form uk-table-condensed uk-table-hover uk-table-bordered uk-margin-top'],
                 'options'=> ['class' => 'items'],
                 'layout' => '{items}{pager}<hr>',
-                'pager' => ['class'=> 'worstinme\uikit\widgets\LinkPager'],
+                'pager' => ['class'=> 'balitrip\uikit\widgets\LinkPager'],
                 'columns' => [
                     'id',
                     [

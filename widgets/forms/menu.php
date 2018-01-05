@@ -1,7 +1,7 @@
 <?php
 
 use yii\helpers\Html;
-use worstinme\uikit\ActiveForm;
+use balitrip\uikit\ActiveForm;
 
 $form = ActiveForm::begin(['layout'=>'horizontal','field_width'=>'full']); ?>
 

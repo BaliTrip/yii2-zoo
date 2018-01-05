@@ -1,10 +1,10 @@
 <?php
 
-namespace worstinme\zoo\elements\article;
+namespace balitrip\zoo\elements\article;
 
 use Yii;
 
-class Element extends \worstinme\zoo\elements\textfield\Element
+class Element extends \balitrip\zoo\elements\textfield\Element
 {
 
 

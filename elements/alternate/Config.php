@@ -1,8 +1,8 @@
 <?php
 
-namespace worstinme\zoo\elements\alternate;
+namespace balitrip\zoo\elements\alternate;
 
-use worstinme\zoo\models\Items;
+use balitrip\zoo\models\Items;
 use Yii;
 use yii\db\Query;
 use yii\helpers\ArrayHelper;
@@ -27,7 +27,7 @@ class Config extends \yii\base\Behavior
     }
 
     public function getConfigView() {
-        return '@worstinme/zoo/elements/alternate/_settings';
+        return '@balitrip/zoo/elements/alternate/_settings';
     }
 
     public function getItems() {

@@ -2,8 +2,8 @@
 
 use yii\helpers\Html;
 
-\worstinme\uikit\assets\Nestable::register($this);
-\worstinme\uikit\assets\Notify::register($this);
+\balitrip\uikit\assets\Nestable::register($this);
+\balitrip\uikit\assets\Notify::register($this);
 
 $this->title = Yii::t('zoo','Шаблон отображения <em>'.$name.'</em>');
 $this->params['breadcrumbs'][] = ['label' => Yii::t('zoo','Приложения'), 'url' => ['/'.Yii::$app->controller->module->id.'/default/index']];

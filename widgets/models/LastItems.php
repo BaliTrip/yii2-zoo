@@ -1,12 +1,12 @@
 <?php
 
-namespace worstinme\zoo\widgets\models;
+namespace balitrip\zoo\widgets\models;
 
 use Yii;
-use worstinme\zoo\models\Items;
-use worstinme\zoo\models\Applications;
-use worstinme\zoo\models\Categories;
-use worstinme\zoo\models\Elements;
+use balitrip\zoo\models\Items;
+use balitrip\zoo\models\Applications;
+use balitrip\zoo\models\Categories;
+use balitrip\zoo\models\Elements;
 
 class LastItems extends \yii\base\Model
 {
@@ -30,7 +30,7 @@ class LastItems extends \yii\base\Model
     }
 
     public static function getFormView() {
-        return '@worstinme/zoo/widgets/forms/lastitems';
+        return '@balitrip/zoo/widgets/forms/lastitems';
     }
 
     public function rules()

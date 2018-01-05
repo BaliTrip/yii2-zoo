@@ -1,16 +1,16 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: worstinme
+ * User: balitrip
  * Date: 23.07.2017
  * Time: 12:53
  */
 
-namespace worstinme\zoo\elements;
+namespace balitrip\zoo\elements;
 
-use worstinme\zoo\backend\models\Elements;
+use balitrip\zoo\backend\models\Elements;
 use Yii;
-use worstinme\zoo\models\Items;
+use balitrip\zoo\models\Items;
 use yii\base\Action;
 use yii\base\InvalidConfigException;
 use yii\web\NotFoundHttpException;

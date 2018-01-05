@@ -1,14 +1,14 @@
 <?php
 
-namespace worstinme\zoo\backend\models;
+namespace balitrip\zoo\backend\models;
 
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use worstinme\zoo\backend\models\Menu;
+use balitrip\zoo\backend\models\Menu;
 
 /**
- * MenuSearch represents the model behind the search form about `worstinme\zoo\backend\models\Menu`.
+ * MenuSearch represents the model behind the search form about `balitrip\zoo\backend\models\Menu`.
  */
 class MenuSearch extends Menu
 {

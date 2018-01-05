@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\zoo\models;
+namespace balitrip\zoo\models;
 
 use Yii;
 use yii\db\Query;

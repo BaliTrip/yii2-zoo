@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\zoo\models;
+namespace balitrip\zoo\models;
 
 use Yii;
 use yii\helpers\Json;
@@ -18,7 +18,7 @@ class Categories extends \yii\db\ActiveRecord
         return [
             \yii\behaviors\TimestampBehavior::className(),
             [
-                'class' => \worstinme\zoo\behaviors\SluggableBehavior::className(),
+                'class' => \balitrip\zoo\behaviors\SluggableBehavior::className(),
                 'uniqueValidator' => ['attributes' => 'alias', 'targetAttribute' => ['alias', 'lang']],
             ],
         ];

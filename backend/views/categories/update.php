@@ -1,7 +1,7 @@
 <?php
 
-use worstinme\uikit\ActiveForm;
-use worstinme\zoo\models\Categories;
+use balitrip\uikit\ActiveForm;
+use balitrip\zoo\models\Categories;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Url;
 use yii\helpers\Html;
@@ -95,7 +95,7 @@ $items = ArrayHelper::map(Categories::find()
 
         <hr>
 
-        <?= $form->field($model, 'alternateIds')->widget(\worstinme\zoo\helpers\Select2Widget::className(), [
+        <?= $form->field($model, 'alternateIds')->widget(\balitrip\zoo\helpers\Select2Widget::className(), [
             'options' => [
                 'multiple' => true,
                 'placeholder' => 'Choose alternates'

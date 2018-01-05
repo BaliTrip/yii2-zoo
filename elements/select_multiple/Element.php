@@ -1,10 +1,10 @@
 <?php
 
-namespace worstinme\zoo\elements\select_multiple;
+namespace balitrip\zoo\elements\select_multiple;
 
 use Yii;
 
-class Element extends \worstinme\zoo\elements\BaseElementBehavior
+class Element extends \balitrip\zoo\elements\BaseElementBehavior
 {
 
     public function rules($attributes)

@@ -1,10 +1,10 @@
 <?php
 
-namespace worstinme\zoo\elements\color;
+namespace balitrip\zoo\elements\color;
 
 use Yii;
 
-class Element extends \worstinme\zoo\elements\textfield_multiple\Element
+class Element extends \balitrip\zoo\elements\textfield_multiple\Element
 {
 
 

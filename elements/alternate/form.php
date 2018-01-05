@@ -19,7 +19,7 @@ $input_id = Html::getInputId($model,$attribute);
 <?php endif ?>
 
 <div class="uk-from-controls">
-    <?= \worstinme\zoo\helpers\Select2Widget::widget([
+    <?= \balitrip\zoo\helpers\Select2Widget::widget([
         'model' => $model,
         'attribute' =>  $attribute,
         'options' => [

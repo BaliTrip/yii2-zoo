@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\zoo\assets;
+namespace balitrip\zoo\assets;
 
 use yii\web\AssetBundle;
 

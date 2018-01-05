@@ -1,14 +1,14 @@
 <?php
 
-namespace worstinme\zoo;
+namespace balitrip\zoo;
 
 use Yii;
 use yii\base\InvalidConfigException;
 use yii\helpers\FileHelper;
 use yii\helpers\Json;
-use worstinme\zoo\models\Applications;
-use worstinme\zoo\backend\models\Widgets;
-use worstinme\zoo\backend\models\Config;
+use balitrip\zoo\models\Applications;
+use balitrip\zoo\backend\models\Widgets;
+use balitrip\zoo\backend\models\Config;
 
 class Component extends \yii\base\Component { 
 
@@ -29,7 +29,7 @@ class Component extends \yii\base\Component {
     public function getMenu() {
 
 		if ($this->menu === null) {
-			$this->menu = new \worstinme\zoo\models\Menu;
+			$this->menu = new \balitrip\zoo\models\Menu;
 		}
 
 		return $this->menu;
@@ -37,7 +37,7 @@ class Component extends \yii\base\Component {
 
     public function findShortcodes($content) {
 
-        $shortcode = new \worstinme\zoo\helpers\ShortcodeHelper;
+        $shortcode = new \balitrip\zoo\helpers\ShortcodeHelper;
         $shortcode->callbacks = $this->callbacks();
 
         return $shortcode->parse($content);
@@ -46,10 +46,10 @@ class Component extends \yii\base\Component {
     public function callbacks() {
 
         return array_merge([
-            'uk-slideshow'=>['worstinme\uikit\widgets\Slideshow','widget'],
-            'widget'=>['worstinme\widgets\widgets\WidgetId','widget'],
-            'teaser'=>['worstinme\zoo\widgets\Teaser','widget'],
-            'youtube'=>['worstinme\zoo\widgets\Youtube','widget'],
+            'uk-slideshow'=>['balitrip\uikit\widgets\Slideshow','widget'],
+            'widget'=>['balitrip\widgets\widgets\WidgetId','widget'],
+            'teaser'=>['balitrip\zoo\widgets\Teaser','widget'],
+            'youtube'=>['balitrip\zoo\widgets\Youtube','widget'],
         ],$this->callbacks);
     }
 

@@ -8,5 +8,5 @@ $class = !empty($row['params']) && !empty($row['params']['column'])?'uk-grid uk-
 
 ?>
 <div class="item item-teaser <?=$class?>"> 
-	<?=\worstinme\zoo\helpers\TemplateHelper::render($model,'teaser')?>
+	<?=\balitrip\zoo\helpers\TemplateHelper::render($model,'teaser')?>
 </div>

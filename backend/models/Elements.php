@@ -1,15 +1,15 @@
 <?php
 
-namespace worstinme\zoo\backend\models;
+namespace balitrip\zoo\backend\models;
 
-use worstinme\zoo\models\Items;
-use worstinme\zoo\models\ItemsElements;
+use balitrip\zoo\models\Items;
+use balitrip\zoo\models\ItemsElements;
 use Yii;
 use yii\helpers\Json;
 use yii\helpers\ArrayHelper;
 use yii\rbac\Item;
 
-class Elements extends \worstinme\zoo\models\Elements
+class Elements extends \balitrip\zoo\models\Elements
 {
 
     private $categories = [];

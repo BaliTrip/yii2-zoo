@@ -6,7 +6,7 @@ $this->registerJs($model->addValidators($this, $attribute), 5);
 
 $input_id = Html::getInputId($model, $attribute);
 
-\worstinme\zoo\assets\Select2Asset::register($this);
+\balitrip\zoo\assets\Select2Asset::register($this);
 
 
 ?>
@@ -21,7 +21,7 @@ $input_id = Html::getInputId($model, $attribute);
     <?= Html::activeLabel($model, $attribute, ['class' => 'uk-form-label']); ?>
 <?php endif ?>
 
-<?= \worstinme\zoo\helpers\Select2Widget::widget([
+<?= \balitrip\zoo\helpers\Select2Widget::widget([
     'model' => $model,
     'attribute' => $attribute,
     'options' => [

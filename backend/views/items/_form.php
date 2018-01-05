@@ -1,10 +1,10 @@
 <?php
 
-use worstinme\zoo\models\Items;
+use balitrip\zoo\models\Items;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\helpers\Json;
-use worstinme\uikit\ActiveForm;
+use balitrip\uikit\ActiveForm;
 
 $rows = $model->getTemplateRows('form');
 
@@ -27,7 +27,7 @@ $items = ArrayHelper::map(Items::find()
         echo $form->errorSummary($model);
     }
 
-    echo \worstinme\zoo\helpers\TemplateHelper::render($model, 'form');
+    echo \balitrip\zoo\helpers\TemplateHelper::render($model, 'form');
 
     ?>
 
@@ -38,7 +38,7 @@ $items = ArrayHelper::map(Items::find()
 
         <div class="uk-width-medium-2-3">
 
-            <?= $form->field($model, 'alternateIds')->widget(\worstinme\zoo\helpers\Select2Widget::className(), [
+            <?= $form->field($model, 'alternateIds')->widget(\balitrip\zoo\helpers\Select2Widget::className(), [
                 'options' => [
                     'multiple' => true,
                     'placeholder' => 'Choose alternates'

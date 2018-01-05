@@ -1,12 +1,12 @@
 <?php
 
 use \yii\helpers\Html;
-use worstinme\zoo\helpers\ImageHelper;
+use balitrip\zoo\helpers\ImageHelper;
 
 $width = isset($params['width']) ? (int)$params['width'] : null;
 $height = isset($params['height']) ? (int)$params['height'] : null;
 
-\worstinme\uikit\assets\Slideset::register($this);
+\balitrip\uikit\assets\Slideset::register($this);
 
 ?>
 

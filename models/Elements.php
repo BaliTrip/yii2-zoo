@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\zoo\models;
+namespace balitrip\zoo\models;
 
 use Yii;
 use yii\helpers\Json;
@@ -23,8 +23,8 @@ class Elements extends \yii\db\ActiveRecord
     public function afterFind()
     {
 
-        if ($this->type !== null  && is_file(Yii::getAlias('@worstinme/zoo').'/elements/'.$this->type.'/Config.php')) {
-            $element = '\worstinme\zoo\elements\\'.$this->type.'\Config';
+        if ($this->type !== null  && is_file(Yii::getAlias('@balitrip/zoo').'/elements/'.$this->type.'/Config.php')) {
+            $element = '\balitrip\zoo\elements\\'.$this->type.'\Config';
             $this->attachBehaviors([
                 $element::className()          // an anonymous behavior
             ]);
@@ -34,7 +34,7 @@ class Elements extends \yii\db\ActiveRecord
     }
 
     public function getFormView() {
-        return '@worstinme/zoo/elements/'.$this->type.'/form';
+        return '@balitrip/zoo/elements/'.$this->type.'/form';
     }
 
     //related

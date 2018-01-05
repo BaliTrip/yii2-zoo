@@ -1,13 +1,13 @@
 <?php
 
-namespace worstinme\zoo\backend\models;
+namespace balitrip\zoo\backend\models;
 
 use Yii;
 use yii\helpers\Json;
 use yii\helpers\Inflector;
 use yii\base\InvalidParamException;
 
-class Applications extends \worstinme\zoo\models\Applications
+class Applications extends \balitrip\zoo\models\Applications
 {
 
     public $example;
@@ -174,7 +174,7 @@ class Applications extends \worstinme\zoo\models\Applications
 
         //controller 
 
-        $controller = Yii::$app->view->render('@worstinme/zoo/applications/default/controllers/DefaultController', [
+        $controller = Yii::$app->view->render('@balitrip/zoo/applications/default/controllers/DefaultController', [
             'controllerName' => $this->controllerName,
             'modelName' => $this->modelName,
         ]);
@@ -189,13 +189,13 @@ class Applications extends \worstinme\zoo\models\Applications
             mkdir(Yii::getAlias('@app/views/' . $controller));
         }
 
-        $files = \yii\helpers\FileHelper::findFiles(Yii::getAlias('@worstinme/zoo/applications/default/views'));
+        $files = \yii\helpers\FileHelper::findFiles(Yii::getAlias('@balitrip/zoo/applications/default/views'));
 
         foreach ($files as $file) {
 
-            $view = str_replace([Yii::getAlias('@worstinme/zoo/applications/default/views'), ".php"], "", $file);
+            $view = str_replace([Yii::getAlias('@balitrip/zoo/applications/default/views'), ".php"], "", $file);
 
-            $text = file_get_contents(Yii::getAlias('@worstinme/zoo/applications/default/views' . $view) . '.php');
+            $text = file_get_contents(Yii::getAlias('@balitrip/zoo/applications/default/views' . $view) . '.php');
 
             file_put_contents(Yii::getAlias('@app/views/' . $controller . '/' . $view) . '.php', $text);
 
@@ -203,14 +203,14 @@ class Applications extends \worstinme\zoo\models\Applications
 
         if ($this->modelName) {
 
-            $model = Yii::$app->view->render('@worstinme/zoo/applications/default/models/Items', [
+            $model = Yii::$app->view->render('@balitrip/zoo/applications/default/models/Items', [
                 'modelName' => $this->modelName,
                 'tableName' => $this->model_table_name,
             ]);
 
             file_put_contents(Yii::getAlias('@app/models/' . $this->modelName . '.php'), $model);
 
-            $searchModel = Yii::$app->view->render('@worstinme/zoo/applications/default/models/S', [
+            $searchModel = Yii::$app->view->render('@balitrip/zoo/applications/default/models/S', [
                 'modelName' => $this->modelName,
                 'tableName' => $this->model_table_name,
             ]);
@@ -251,7 +251,7 @@ class Applications extends \worstinme\zoo\models\Applications
             $this->example = 'default';
         }
 
-        if (!is_dir(Yii::getAlias('@worstinme/zoo/applications/') . $this->example)) {
+        if (!is_dir(Yii::getAlias('@balitrip/zoo/applications/') . $this->example)) {
             $this->addError($attribute, 'Application example is not exists');
         }
 
@@ -260,7 +260,7 @@ class Applications extends \worstinme\zoo\models\Applications
     public function getExamples()
     {
 
-        $dirs = \worstinme\zoo\helpers\AppHelper::findDirectories(Yii::getAlias('@worstinme/zoo/applications'));
+        $dirs = \balitrip\zoo\helpers\AppHelper::findDirectories(Yii::getAlias('@balitrip/zoo/applications'));
 
         $list = [];
 
@@ -306,7 +306,7 @@ class Applications extends \worstinme\zoo\models\Applications
         if (parent::beforeSave($insert)) {
 
             if ($insert) {
-                $this->templates = Json::encode(require(Yii::getAlias('@worstinme/zoo/applications/default/Templates.php')));
+                $this->templates = Json::encode(require(Yii::getAlias('@balitrip/zoo/applications/default/Templates.php')));
             }
 
             return true;
@@ -322,7 +322,7 @@ class Applications extends \worstinme\zoo\models\Applications
 
             $this->create();
 
-            $elements = require(Yii::getAlias('@worstinme/zoo/applications/default/Elements.php'));
+            $elements = require(Yii::getAlias('@balitrip/zoo/applications/default/Elements.php'));
 
             if (is_array($elements) && count($elements)) {
                 foreach ($elements as $key => $params) {

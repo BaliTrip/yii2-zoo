@@ -11,7 +11,7 @@ use yii\helpers\Html;
     <ul<?= !empty($list_class) ? ' class="' . $list_class . '"' : '' ?>>
         <?php foreach ($items as $key => $item): ?>
             <li>
-                <?= \worstinme\zoo\helpers\TemplateHelper::render($item, 'list-item') ?>
+                <?= \balitrip\zoo\helpers\TemplateHelper::render($item, 'list-item') ?>
             </li>
         <?php endforeach ?>
     </ul>

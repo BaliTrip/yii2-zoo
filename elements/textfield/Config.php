@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\zoo\elements\textfield;
+namespace balitrip\zoo\elements\textfield;
 
 use Yii;
 use yii\db\ActiveRecord;

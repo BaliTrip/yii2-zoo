@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\zoo\helpers;
+namespace balitrip\zoo\helpers;
 
 use Yii;
 

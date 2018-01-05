@@ -4,7 +4,7 @@
 ?>
 
 <select name="type">
-	<?php foreach (\worstinme\zoo\helpers\TemplateHelper::types() as $value): ?>
+	<?php foreach (\balitrip\zoo\helpers\TemplateHelper::types() as $value): ?>
 		<?php if (!empty($row['type']) && $row['type'] == $value): ?>
 			<option selected value="<?=$value?>"><?=$value?></option>
 

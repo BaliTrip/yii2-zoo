@@ -5,13 +5,13 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace worstinme\zoo\elements\image_uikit;
+namespace balitrip\zoo\elements\image_uikit;
 
 use yii\web\AssetBundle;
 
 class Asset extends AssetBundle
 {
-    public $sourcePath = '@worstinme/zoo/elements/image_uikit';
+    public $sourcePath = '@balitrip/zoo/elements/image_uikit';
     public $css = [
         'style.css',
     ];
@@ -19,6 +19,6 @@ class Asset extends AssetBundle
     ];
     public $depends = [
         'yii\web\YiiAsset',
-        'worstinme\uikit\UikitAsset',
+        'balitrip\uikit\UikitAsset',
     ];
 }

@@ -1,10 +1,10 @@
 <?php
 
-namespace worstinme\zoo\elements\alternate;
+namespace balitrip\zoo\elements\alternate;
 
 use Yii;
 
-class Element extends \worstinme\zoo\elements\BaseElementBehavior
+class Element extends \balitrip\zoo\elements\BaseElementBehavior
 {
 
     public function rules($attributes)
@@ -42,7 +42,7 @@ class Element extends \worstinme\zoo\elements\BaseElementBehavior
     }
 
     public function getAlternates() {
-        return \worstinme\zoo\models\Items::find()->where(['id'=>$this->getValue('alternate')])->all();
+        return \balitrip\zoo\models\Items::find()->where(['id'=>$this->getValue('alternate')])->all();
     }
 
     public function setValue($attribute, $value)

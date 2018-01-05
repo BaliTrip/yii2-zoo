@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\zoo\elements\price;
+namespace balitrip\zoo\elements\price;
 
 use Yii;
 use yii\db\ActiveRecord;
@@ -18,7 +18,7 @@ class Config extends \yii\base\Behavior
     }
 
     public function getParamsView() {
-        return '@worstinme/zoo/elements/price/params';
+        return '@balitrip/zoo/elements/price/params';
     }
 
 

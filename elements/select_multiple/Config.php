@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\zoo\elements\select_multiple;
+namespace balitrip\zoo\elements\select_multiple;
 
 use Yii;
 use yii\db\ActiveRecord;
@@ -32,7 +32,7 @@ class Config extends \yii\base\Behavior
     }
 
     public function getConfigView() {
-        return '@worstinme/zoo/elements/select_multiple/_settings';
+        return '@balitrip/zoo/elements/select_multiple/_settings';
     }
 
     public function getVariantsType(){

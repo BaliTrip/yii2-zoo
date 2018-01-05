@@ -1,10 +1,10 @@
 <?php
 
-namespace worstinme\zoo\elements\checkbox;
+namespace balitrip\zoo\elements\checkbox;
 
 use Yii;
 
-class Element extends \worstinme\zoo\elements\BaseElementBehavior
+class Element extends \balitrip\zoo\elements\BaseElementBehavior
 {
 
 	public function rules($attributes)

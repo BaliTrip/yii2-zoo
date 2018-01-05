@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\zoo\widgets;
+namespace balitrip\zoo\widgets;
 
 use Yii;
 use yii\helpers\Html;

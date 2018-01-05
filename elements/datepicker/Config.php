@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\zoo\elements\datepicker;
+namespace balitrip\zoo\elements\datepicker;
 
 use Yii;
 use yii\db\ActiveRecord;

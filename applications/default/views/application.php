@@ -3,7 +3,7 @@
 use yii\helpers\Url;
 use yii\helpers\Html;
 use yii\widgets\ListView;
-use worstinme\uikit\Breadcrumbs;
+use balitrip\uikit\Breadcrumbs;
 
 $this->title = $app->metaTitle;
 $this->params['breadcrumbs'][] = $app->title;

@@ -1,9 +1,9 @@
 <?php
 
-namespace worstinme\zoo\elements\related;
+namespace balitrip\zoo\elements\related;
 
-use worstinme\zoo\models\Applications;
-use worstinme\zoo\models\Items;
+use balitrip\zoo\models\Applications;
+use balitrip\zoo\models\Items;
 use Yii;
 use yii\db\Query;
 use yii\helpers\ArrayHelper;
@@ -32,7 +32,7 @@ class Config extends \yii\base\Behavior
     }
 
     public function getConfigView() {
-        return '@worstinme/zoo/elements/related/_settings';
+        return '@balitrip/zoo/elements/related/_settings';
     }
 
     public function getRelatedCategories(){

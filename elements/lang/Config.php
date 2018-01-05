@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\zoo\elements\lang;
+namespace balitrip\zoo\elements\lang;
 
 use Yii;
 use yii\db\ActiveRecord;
@@ -12,7 +12,7 @@ class Config extends \yii\base\Behavior
     public $iconClass = 'uk-icon-header';
 
     public function getParamsView() {
-        return '@worstinme/zoo/elements/lang/params';
+        return '@balitrip/zoo/elements/lang/params';
     }
 
 }

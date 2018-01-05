@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\zoo\helpers;
+namespace balitrip\zoo\helpers;
 
 use Yii;
 use yii\base\Exception;
@@ -56,7 +56,7 @@ class ImageHelper
         $filename = FileHelper::normalizePath(Yii::getAlias($filename));
         if (!is_file($filename)) {
             Yii::error("File $filename doesn't exist, used fish");
-            $filename = FileHelper::normalizePath(Yii::getAlias('@worstinme/zoo/assets/images/zaglushka.jpg'));
+            $filename = FileHelper::normalizePath(Yii::getAlias('@balitrip/zoo/assets/images/zaglushka.jpg'));
         }
         $cachePath = Yii::getAlias('@webroot/' . self::$cacheAlias);
         $thumbnailFileExt = strrchr($filename, '.');

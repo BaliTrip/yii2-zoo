@@ -4,7 +4,7 @@ use yii\helpers\Html;
 
 $this->registerJs($model->addValidators($this,$attribute), 5);
 
-\worstinme\uikit\assets\Datepicker::register($this);
+\balitrip\uikit\assets\Datepicker::register($this);
 
 ?>
 

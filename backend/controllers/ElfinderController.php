@@ -1,10 +1,10 @@
 <?php
 /**
- * @link https://github.com/worstinme/yii2-user
+ * @link https://github.com/balitrip/yii2-user
  * @copyright Copyright (c) 2014 Evgeny Zakirov
  * @license http://opensource.org/licenses/MIT MIT
  */
-namespace worstinme\zoo\backend\controllers;
+namespace balitrip\zoo\backend\controllers;
 
 use Yii;
 use yii\web\NotFoundHttpException;

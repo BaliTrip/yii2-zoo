@@ -1,7 +1,7 @@
 <?php
-namespace worstinme\zoo\helpers;
+namespace balitrip\zoo\helpers;
 
-use worstinme\zoo\assets\Select2Asset;
+use balitrip\zoo\assets\Select2Asset;
 use Yii;
 use yii\widgets\InputWidget;
 use yii\helpers\Json;

@@ -1,12 +1,12 @@
 <?php
-namespace worstinme\zoo;
+namespace balitrip\zoo;
 
 use Yii;
 
-use worstinme\zoo\models\Applications;
-use worstinme\zoo\models\Items;
-use worstinme\zoo\models\Categories;
-use worstinme\zoo\models\S as s;
+use balitrip\zoo\models\Applications;
+use balitrip\zoo\models\Items;
+use balitrip\zoo\models\Categories;
+use balitrip\zoo\models\S as s;
 
 use yii\web\NotFoundHttpException;
 

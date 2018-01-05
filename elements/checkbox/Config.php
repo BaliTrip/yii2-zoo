@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\zoo\elements\checkbox;
+namespace balitrip\zoo\elements\checkbox;
 
 use Yii;
 use yii\db\ActiveRecord;
@@ -45,7 +45,7 @@ class Config extends \yii\base\Behavior
     }
 
     public function getConfigView() {
-        return '@worstinme/zoo/elements/checkbox/_settings';
+        return '@balitrip/zoo/elements/checkbox/_settings';
     }
 
 

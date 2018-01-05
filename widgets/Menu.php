@@ -1,10 +1,10 @@
 <?php
-namespace worstinme\zoo\widgets;
+namespace balitrip\zoo\widgets;
 
 use Yii;
-use worstinme\zoo\backend\models\Menu as MenuModel;
+use balitrip\zoo\backend\models\Menu as MenuModel;
 
-class Menu extends \worstinme\uikit\Nav
+class Menu extends \balitrip\uikit\Nav
 {
     public $name;
     public $menu;

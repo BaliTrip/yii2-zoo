@@ -1,7 +1,7 @@
 <?php
 
 use yii\helpers\Html;
-use worstinme\uikit\ActiveForm;
+use balitrip\uikit\ActiveForm;
 
 /* @var $this yii\web\View */
 /* @var $model app\modules\admin\models\Config */

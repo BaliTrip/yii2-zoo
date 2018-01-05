@@ -1,10 +1,10 @@
 <?php
 
-namespace worstinme\zoo\widgets;
+namespace balitrip\zoo\widgets;
 
 use Yii;
 use yii\helpers\Html;
-use worstinme\zoo\models\Items;
+use balitrip\zoo\models\Items;
 
 class Teaser extends \yii\base\Widget
 {
@@ -15,7 +15,7 @@ class Teaser extends \yii\base\Widget
     {
     	if ($this->id !== null && ($item = Items::findOne($this->id)) !== null) {
 
-    		$teaser = \worstinme\zoo\helpers\TemplateHelper::render($item,'teaser');
+    		$teaser = \balitrip\zoo\helpers\TemplateHelper::render($item,'teaser');
 
     		return "<div class='item item-teaser'>".$teaser."</div>";
     	}
@@ -32,7 +32,7 @@ class Teaser extends \yii\base\Widget
     			$html .= '<div class="uk-grid uk-grid-width-medium-1-2 uk-grid-large uk-grid-match" data-uk-grid-margin>';
 
     			foreach ($items as $item) {
-    				$teaser = \worstinme\zoo\helpers\TemplateHelper::render($item,'teaser');
+    				$teaser = \balitrip\zoo\helpers\TemplateHelper::render($item,'teaser');
     				$html .= "<div><div class='item item-teaser'>".$teaser."</div></div>";
     			}
 

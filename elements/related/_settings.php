@@ -1,6 +1,6 @@
 <?php
 
-use worstinme\zoo\models\Applications;
+use balitrip\zoo\models\Applications;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 
@@ -12,7 +12,7 @@ use yii\helpers\Html;
 <div class="uk-form-row">
     <?= Html::activeLabel($model, 'relatedCategories', ['class'=>'uk-form-label']); ?>
     <div class="uk-form-controls">
-        <?= \worstinme\zoo\helpers\Select2Widget::widget([
+        <?= \balitrip\zoo\helpers\Select2Widget::widget([
             'model' => $model,
             'attribute' => 'relatedCategories',
             'options' => [

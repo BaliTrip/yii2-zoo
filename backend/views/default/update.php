@@ -3,8 +3,8 @@
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\helpers\Url;
-use worstinme\uikit\ActiveForm;
-use worstinme\zoo\models\Items;
+use balitrip\uikit\ActiveForm;
+use balitrip\zoo\models\Items;
 
 $this->title = Yii::t('zoo','Настройки приложения');
 $this->params['breadcrumbs'][] = ['label' => Yii::t('zoo','Приложения'), 'url' => ['index']];

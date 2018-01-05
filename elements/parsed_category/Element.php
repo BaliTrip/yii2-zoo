@@ -1,11 +1,11 @@
 <?php
 
-namespace worstinme\zoo\elements\parsed_category;
+namespace balitrip\zoo\elements\parsed_category;
 
 use Yii;
 use app\modules\admin\models\ParserCategories;
 
-class Element extends \worstinme\zoo\elements\textfield_multiple\Element
+class Element extends \balitrip\zoo\elements\textfield_multiple\Element
 {
 
 

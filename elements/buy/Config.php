@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\zoo\elements\buy;
+namespace balitrip\zoo\elements\buy;
 
 use Yii;
 use yii\db\ActiveRecord;

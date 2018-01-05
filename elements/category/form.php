@@ -7,7 +7,7 @@ $this->registerJs($model->addValidators($this,$attribute), 5);
 
 $multiselect = isset($params['multiselect']) ? (int)$params['multiselect'] : 0;
 
-\worstinme\zoo\assets\Select2Asset::register($this);
+\balitrip\zoo\assets\Select2Asset::register($this);
 
 ?>
 
@@ -15,7 +15,7 @@ $multiselect = isset($params['multiselect']) ? (int)$params['multiselect'] : 0;
 
 	<?= Html::activeLabel($model, 'category',['class'=>'uk-form-label']); ?>
 
-	<?= \worstinme\zoo\helpers\Select2Widget::widget([
+	<?= \balitrip\zoo\helpers\Select2Widget::widget([
 		'model' => $model,
 		'attribute' => 'category',
 		'options' => [
@@ -37,7 +37,7 @@ $multiselect = isset($params['multiselect']) ? (int)$params['multiselect'] : 0;
 		<?php if (count($model->category)): ?>
 		<?php $i=0;foreach ($model->category as $key => $category_id): ?>
 			<?php if ($category_id > 0): ?>		
-				<?php $related_cats = ArrayHelper::map(\worstinme\zoo\models\Categories::find()->where(['parent_id'=>$category_id])->all(),'id','name'); ?>
+				<?php $related_cats = ArrayHelper::map(\balitrip\zoo\models\Categories::find()->where(['parent_id'=>$category_id])->all(),'id','name'); ?>
 				<?php if (count($related_cats)): $i++; ?>
 				<div class="related-category-select uk-margin-top">
 					<?=Html::activeDropDownList($model,$attribute.'['.($key+1).']',$related_cats,['prompt'=>'выбрать из списка','class'=>'uk-width-1-1  category-select'])?>	

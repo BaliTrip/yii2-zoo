@@ -1,11 +1,11 @@
 <?php
 
-namespace worstinme\zoo\elements\image_uikit;
+namespace balitrip\zoo\elements\image_uikit;
 
 
-use worstinme\zoo\helpers\ImageHelper;
+use balitrip\zoo\helpers\ImageHelper;
 use Yii;
-use worstinme\zoo\elements\BaseCallbackAction;
+use balitrip\zoo\elements\BaseCallbackAction;
 use yii\helpers\Json;
 use yii\imagine\Image;
 use yii\web\UploadedFile;
@@ -73,7 +73,7 @@ class CallbackAction extends BaseCallbackAction
             Yii::$app->session->set($sessionName, $images);
 
             return [
-                'image' => $this->controller->renderPartial('@worstinme/zoo/elements/image_uikit/_input', [
+                'image' => $this->controller->renderPartial('@balitrip/zoo/elements/image_uikit/_input', [
                     'model' => $model,
                     'attribute' => $this->element->name,
                     'image' => [

@@ -1,8 +1,8 @@
 <?php
 
-namespace worstinme\zoo\behaviors;
+namespace balitrip\zoo\behaviors;
 
-use worstinme\zoo\helpers\Inflector;
+use balitrip\zoo\helpers\Inflector;
 
 class SluggableBehavior extends \yii\behaviors\SluggableBehavior
 {

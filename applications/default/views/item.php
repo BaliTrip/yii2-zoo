@@ -14,6 +14,6 @@ $class = !empty($row['params']) && !empty($row['params']['column'])?'uk-grid uk-
 ?>
 <article class="<?=$app->name?> <?=$app->name?>-item <?=$class?>">
 
-<?=\worstinme\zoo\helpers\TemplateHelper::render($model,'full')?>
+<?=\balitrip\zoo\helpers\TemplateHelper::render($model,'full')?>
 
 </article>

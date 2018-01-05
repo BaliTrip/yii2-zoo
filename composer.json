@@ -1,5 +1,5 @@
 {
-    "name": "worstinme/yii2-zoo",
+    "name": "balitrip/yii2-zoo",
     "description": "Yii content construction kit",
     "type": "yii2-extension",
     "keywords": ["yii2"," content"," CCK"," zoo"],
@@ -12,7 +12,7 @@
     ],
     "require": {
         "yiisoft/yii2": "*",
-        "worstinme/yii2-uikit": "*",
+        "balitrip/yii2-uikit": "*",
         "mihaildev/yii2-elfinder" : "*",
         "mihaildev/yii2-ckeditor" : "*",
         "yiisoft/yii2-imagine": "*",
@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "worstinme\\zoo\\": ""
+            "balitrip\\zoo\\": ""
         }
     }
 }

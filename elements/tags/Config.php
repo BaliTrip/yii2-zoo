@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\zoo\elements\tags;
+namespace balitrip\zoo\elements\tags;
 
 use Yii;
 use yii\db\ActiveRecord;

@@ -4,7 +4,7 @@
  * @copyright Copyright (c) 2008 Yii Software LLC
  * @license http://www.yiiframework.com/license/
  */
-namespace worstinme\zoo\helpers;
+namespace balitrip\zoo\helpers;
 
 use yii\helpers\BaseInflector;
 

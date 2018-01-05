@@ -1,15 +1,15 @@
 <?php
 
-namespace worstinme\zoo\backend\models;
+namespace balitrip\zoo\backend\models;
 
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
 
-use worstinme\zoo\models\Items;
+use balitrip\zoo\models\Items;
 
 /**
- * ItemsSearch represents the model behind the search form about `worstinme\zoo\models\Items`.
+ * ItemsSearch represents the model behind the search form about `balitrip\zoo\models\Items`.
  */
 class ItemsSearch extends Items
 {

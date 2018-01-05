@@ -1,6 +1,6 @@
 <?php
 
-namespace worstinme\zoo\elements\color;
+namespace balitrip\zoo\elements\color;
 
 use yii\helpers\ArrayHelper;
 
